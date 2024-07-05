@@ -1,0 +1,94 @@
+---
+version: 2
+sources:
+- name: public
+  description: kinetica
+  tables:
+  - name: customers
+    columns:
+    - name: customer_id
+      tests:
+      - not_null
+      - unique
+    - name: first_name
+      tests:
+      - not_null
+    - name: last_name
+      tests:
+      - not_null
+    - name: email
+      tests:
+      - not_null
+    - name: phone
+      tests: []
+    - name: created_at
+      tests: []
+  - name: nyctaxi
+    columns:
+    - name: vendor_id
+      tests: []
+    - name: pickup_datetime
+      tests: []
+    - name: dropoff_datetime
+      tests: []
+    - name: passenger_count
+      tests: []
+    - name: trip_distance
+      tests: []
+    - name: pickup_longitude
+      tests: []
+    - name: pickup_latitude
+      tests: []
+    - name: rate_code_id
+      tests: []
+    - name: store_and_fwd_flag
+      tests: []
+    - name: dropoff_longitude
+      tests: []
+    - name: dropoff_latitude
+      tests: []
+    - name: payment_type
+      tests: []
+    - name: fare_amount
+      tests: []
+    - name: surcharge
+      tests: []
+    - name: mta_tax
+      tests: []
+    - name: tip_amount
+      tests: []
+    - name: tolls_amount
+      tests: []
+    - name: total_amount
+      tests: []
+    - name: cab_type
+      tests: []
+  - name: payments
+    columns:
+    - name: payment_id
+      tests:
+      - not_null
+      - unique
+    - name: customer_id
+      tests:
+      - not_null
+    - name: amount
+      tests:
+      - not_null
+    - name: payment_date
+      tests:
+      - not_null
+    - name: payment_method
+      tests:
+      - not_null
+  - name: playing_with_neon
+    columns:
+    - name: id
+      tests:
+      - not_null
+      - unique
+    - name: name
+      tests:
+      - not_null
+    - name: value
+      tests: []
