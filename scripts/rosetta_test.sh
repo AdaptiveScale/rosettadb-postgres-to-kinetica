@@ -9,7 +9,7 @@ echo "#  Starting Script  #"
 echo "#                   #"
 echo "#####################"
 
-export ROSETTA_DRIVERS=/home/runner/work/rosetta-ci-cd/rosetta-ci-cd/drivers/*
+export ROSETTA_DRIVERS=/home/runner/work/rosettadb-postgres-to-kinetica/rosettadb-postgres-to-kinetica/drivers/*
 export PATH=$PATH:/home/runner/work/rosettadb-postgres-to-kinetica/rosettadb-postgres-to-kinetica/rosetta/bin/
 export PATH=$PATH:/home/runner/work/rosettadb-postgres-to-kinetica/rosettadb-postgres-to-kinetica/kinetica/
 
