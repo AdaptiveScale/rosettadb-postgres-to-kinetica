@@ -17,8 +17,7 @@ with nyctaxi as (
 		mta_tax,
 		tip_amount,
 		tolls_amount,
-		total_amount,
-		cab_type
+		total_amount
 	from {{ source('public', 'nyctaxi') }}
 )
 

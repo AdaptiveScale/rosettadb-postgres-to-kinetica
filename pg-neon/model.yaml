@@ -1,6 +1,95 @@
 ---
 safeMode: false
 tables:
+- name: "customers"
+  type: "TABLE"
+  schema: "public"
+  indices:
+  - name: "customers_pkey"
+    schema: "public"
+    tableName: "customers"
+    columnNames:
+    - "customer_id"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 0
+  - name: "customers_email_key"
+    schema: "public"
+    tableName: "customers"
+    columnNames:
+    - "email"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 0
+  columns:
+  - name: "customer_id"
+    typeName: "serial"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    primaryKey: true
+    nullable: false
+    autoincrement: false
+  - name: "first_name"
+    typeName: "varchar"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 50
+    scale: 0
+    precision: 50
+    columnProperties: []
+    primaryKey: false
+    nullable: false
+    autoincrement: false
+  - name: "last_name"
+    typeName: "varchar"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 50
+    scale: 0
+    precision: 50
+    columnProperties: []
+    primaryKey: false
+    nullable: false
+    autoincrement: false
+  - name: "email"
+    typeName: "varchar"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 100
+    scale: 0
+    precision: 100
+    columnProperties: []
+    primaryKey: false
+    nullable: false
+    autoincrement: false
+  - name: "phone"
+    typeName: "varchar"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 20
+    scale: 0
+    precision: 20
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
+  - name: "created_at"
+    typeName: "timestamp"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 29
+    scale: 6
+    precision: 29
+    columnProperties: []
+    primaryKey: false
+    nullable: true
+    autoincrement: false
 - name: "nyctaxi"
   type: "TABLE"
   schema: "public"
@@ -204,7 +293,32 @@ tables:
     primaryKey: false
     nullable: true
     autoincrement: false
-  - name: "cab_type"
+- name: "payments"
+  type: "TABLE"
+  schema: "public"
+  indices:
+  - name: "payments_pkey"
+    schema: "public"
+    tableName: "payments"
+    columnNames:
+    - "payment_id"
+    nonUnique: false
+    type: 3
+    ascOrDesc: "A"
+    cardinality: 0
+  columns:
+  - name: "payment_id"
+    typeName: "serial"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    primaryKey: true
+    nullable: false
+    autoincrement: false
+  - name: "customer_id"
     typeName: "int4"
     ordinalPosition: 0
     primaryKeySequenceId: 0
@@ -212,8 +326,50 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
+    foreignKeys:
+    - name: "payments_customer_id_fkey"
+      schema: "public"
+      tableName: "payments"
+      columnName: "customer_id"
+      deleteRule: "3"
+      primaryTableSchema: "public"
+      primaryTableName: "customers"
+      primaryColumnName: "customer_id"
     primaryKey: false
-    nullable: true
+    nullable: false
+    autoincrement: false
+  - name: "amount"
+    typeName: "numeric"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 2
+    precision: 10
+    columnProperties: []
+    primaryKey: false
+    nullable: false
+    autoincrement: false
+  - name: "payment_date"
+    typeName: "date"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 13
+    scale: 0
+    precision: 13
+    columnProperties: []
+    primaryKey: false
+    nullable: false
+    autoincrement: false
+  - name: "payment_method"
+    typeName: "varchar"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 20
+    scale: 0
+    precision: 20
+    columnProperties: []
+    primaryKey: false
+    nullable: false
     autoincrement: false
 views: []
 databaseProductName: "PostgreSQL"
