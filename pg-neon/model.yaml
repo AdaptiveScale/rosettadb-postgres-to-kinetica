@@ -14,8 +14,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "pickup_datetime"
     typeName: "timestamp"
@@ -25,8 +25,8 @@ tables:
     scale: 6
     precision: 29
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "dropoff_datetime"
     typeName: "timestamp"
@@ -36,8 +36,8 @@ tables:
     scale: 6
     precision: 29
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "passenger_count"
     typeName: "int4"
@@ -47,8 +47,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "trip_distance"
     typeName: "float8"
@@ -58,8 +58,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "pickup_longitude"
     typeName: "float8"
@@ -69,8 +69,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "pickup_latitude"
     typeName: "float8"
@@ -80,8 +80,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "rate_code_id"
     typeName: "int4"
@@ -91,8 +91,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "store_and_fwd_flag"
     typeName: "bpchar"
@@ -102,8 +102,8 @@ tables:
     scale: 0
     precision: 1
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "dropoff_longitude"
     typeName: "float8"
@@ -113,8 +113,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "dropoff_latitude"
     typeName: "float8"
@@ -124,8 +124,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "payment_type"
     typeName: "varchar"
@@ -135,8 +135,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "fare_amount"
     typeName: "float8"
@@ -146,8 +146,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "surcharge"
     typeName: "float8"
@@ -157,8 +157,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "mta_tax"
     typeName: "float8"
@@ -168,8 +168,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "tip_amount"
     typeName: "float8"
@@ -179,8 +179,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "tolls_amount"
     typeName: "float8"
@@ -190,8 +190,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
     autoincrement: false
   - name: "total_amount"
     typeName: "float8"
@@ -201,8 +201,19 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
+    primaryKey: false
+    autoincrement: false
+  - name: "cab_type"
+    typeName: "int4"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    nullable: true
+    primaryKey: false
     autoincrement: false
 views: []
 databaseProductName: "PostgreSQL"
