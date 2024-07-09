@@ -1,10 +1,8 @@
 # PostgreSQL to Kinetica Synchronization
-======================================
 
 This project provides a streamlined process for synchronizing schema and data from PostgreSQL to Kinetica using GitHub Actions. The synchronization process is performed in three steps: Schema Migration using RosettaDB, Data Load using KiSQL, and Data Quality Check using RosettaDB.
 
 ## Steps Performed by the Project
-------------------------------
 
 1.  **Schema Migration**: This step identifies and applies schema changes (deltas) from PostgreSQL to Kinetica.
 2.  **Data Load**: The data from PostgreSQL is loaded into Kinetica using KiSQL.
