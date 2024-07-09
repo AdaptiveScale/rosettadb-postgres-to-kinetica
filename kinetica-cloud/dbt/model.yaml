@@ -4,25 +4,6 @@ sources:
 - name: public
   description: kinetica
   tables:
-  - name: customers
-    columns:
-    - name: customer_id
-      tests:
-      - not_null
-      - unique
-    - name: first_name
-      tests:
-      - not_null
-    - name: last_name
-      tests:
-      - not_null
-    - name: email
-      tests:
-      - not_null
-    - name: phone
-      tests: []
-    - name: created_at
-      tests: []
   - name: nyctaxi
     columns:
     - name: vendor_id
@@ -61,21 +42,5 @@ sources:
       tests: []
     - name: total_amount
       tests: []
-  - name: payments
-    columns:
-    - name: payment_id
-      tests:
-      - not_null
-      - unique
-    - name: customer_id
-      tests:
-      - not_null
-    - name: amount
-      tests:
-      - not_null
-    - name: payment_date
-      tests:
-      - not_null
-    - name: payment_method
-      tests:
-      - not_null
+    - name: cab_type
+      tests: []
