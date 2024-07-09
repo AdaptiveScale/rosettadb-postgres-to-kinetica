@@ -28,6 +28,7 @@ To use this project in your environment, update the repository secrets and varia
 -   `KINETICA_USER`: The username for accessing your Kinetica database.
 -   `KINETICA_PASSWORD`: The password for accessing your Kinetica database.
 -   `KINETICA_DB`: The name of your Kinetica database.
+-   `TARGET_SCHEMA`: The schema for the Kinetica
 -   `GITHUBTOKEN`: The github token that has permission to your repo.
 
 ### 3\. Run the Pipeline through GitHub Actions
@@ -45,9 +46,9 @@ The project contains the following components:
 
 -   **rosetta**: Contains the RosettaDB scripts and configuration.
 -   **jdbc-drivers**: Directory with the required JDBC drivers for PostgreSQL and Kinetica.
--   **kisql**: Directory with KiSQL scripts for loading data into Kinetica.
--   **custom-translation-file**: Custom translation file used during the schema migration.
--   **tests**: Contains CSV files for performing data quality checks.
+-   **kisql**: Directory with KiSQL.
+-   **custom-translation-file**: Custom translation file used during the schema translation.
+-   **tests**: CSV file that contains tests for performing data quality checks.
 
 Prerequisites
 -------------
