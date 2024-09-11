@@ -32,9 +32,9 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: true
     nullable: false
     autoincrement: false
+    primaryKey: true
   - name: "first_name"
     typeName: "varchar"
     ordinalPosition: 0
@@ -43,9 +43,9 @@ tables:
     scale: 0
     precision: 50
     columnProperties: []
-    primaryKey: false
     nullable: false
     autoincrement: false
+    primaryKey: false
   - name: "last_name"
     typeName: "varchar"
     ordinalPosition: 0
@@ -54,9 +54,9 @@ tables:
     scale: 0
     precision: 50
     columnProperties: []
-    primaryKey: false
     nullable: false
     autoincrement: false
+    primaryKey: false
   - name: "email"
     typeName: "varchar"
     ordinalPosition: 0
@@ -65,9 +65,9 @@ tables:
     scale: 0
     precision: 100
     columnProperties: []
-    primaryKey: false
     nullable: false
     autoincrement: false
+    primaryKey: false
   - name: "phone"
     typeName: "varchar"
     ordinalPosition: 0
@@ -76,9 +76,9 @@ tables:
     scale: 0
     precision: 20
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "created_at"
     typeName: "timestamp"
     ordinalPosition: 0
@@ -87,9 +87,9 @@ tables:
     scale: 6
     precision: 29
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
 - name: "nyctaxi"
   type: "TABLE"
   schema: "public"
@@ -103,9 +103,9 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "pickup_datetime"
     typeName: "timestamp"
     ordinalPosition: 0
@@ -114,9 +114,9 @@ tables:
     scale: 6
     precision: 29
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "dropoff_datetime"
     typeName: "timestamp"
     ordinalPosition: 0
@@ -125,9 +125,9 @@ tables:
     scale: 6
     precision: 29
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "passenger_count"
     typeName: "int4"
     ordinalPosition: 0
@@ -136,9 +136,9 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "trip_distance"
     typeName: "float8"
     ordinalPosition: 0
@@ -147,9 +147,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "pickup_longitude"
     typeName: "float8"
     ordinalPosition: 0
@@ -158,9 +158,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "pickup_latitude"
     typeName: "float8"
     ordinalPosition: 0
@@ -169,9 +169,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "rate_code_id"
     typeName: "int4"
     ordinalPosition: 0
@@ -180,9 +180,9 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "store_and_fwd_flag"
     typeName: "bpchar"
     ordinalPosition: 0
@@ -191,9 +191,9 @@ tables:
     scale: 0
     precision: 1
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "dropoff_longitude"
     typeName: "float8"
     ordinalPosition: 0
@@ -202,9 +202,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "dropoff_latitude"
     typeName: "float8"
     ordinalPosition: 0
@@ -213,9 +213,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "payment_type"
     typeName: "varchar"
     ordinalPosition: 0
@@ -224,9 +224,9 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "fare_amount"
     typeName: "float8"
     ordinalPosition: 0
@@ -235,9 +235,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "surcharge"
     typeName: "float8"
     ordinalPosition: 0
@@ -246,9 +246,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "mta_tax"
     typeName: "float8"
     ordinalPosition: 0
@@ -257,9 +257,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "tip_amount"
     typeName: "float8"
     ordinalPosition: 0
@@ -268,9 +268,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "tolls_amount"
     typeName: "float8"
     ordinalPosition: 0
@@ -279,9 +279,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "total_amount"
     typeName: "float8"
     ordinalPosition: 0
@@ -290,9 +290,9 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
   - name: "cab_type"
     typeName: "int4"
     ordinalPosition: 0
@@ -301,9 +301,9 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: true
     autoincrement: false
+    primaryKey: false
 - name: "payments"
   type: "TABLE"
   schema: "public"
@@ -326,9 +326,9 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    primaryKey: true
     nullable: false
     autoincrement: false
+    primaryKey: true
   - name: "customer_id"
     typeName: "int4"
     ordinalPosition: 0
@@ -346,9 +346,9 @@ tables:
       primaryTableSchema: "public"
       primaryTableName: "customers"
       primaryColumnName: "customer_id"
-    primaryKey: false
     nullable: false
     autoincrement: false
+    primaryKey: false
   - name: "amount"
     typeName: "numeric"
     ordinalPosition: 0
@@ -357,9 +357,9 @@ tables:
     scale: 2
     precision: 10
     columnProperties: []
-    primaryKey: false
     nullable: false
     autoincrement: false
+    primaryKey: false
   - name: "payment_date"
     typeName: "date"
     ordinalPosition: 0
@@ -368,9 +368,9 @@ tables:
     scale: 0
     precision: 13
     columnProperties: []
-    primaryKey: false
     nullable: false
     autoincrement: false
+    primaryKey: false
   - name: "payment_method"
     typeName: "varchar"
     ordinalPosition: 0
@@ -379,9 +379,9 @@ tables:
     scale: 0
     precision: 20
     columnProperties: []
-    primaryKey: false
     nullable: false
     autoincrement: false
+    primaryKey: false
 views: []
 databaseProductName: "PostgreSQL"
 databaseType: "postgres"
