@@ -1,0 +1,7 @@
+---
+safeMode: false
+tables: []
+views: []
+databaseProductName: "Kinetica"
+databaseType: "kinetica"
+operationLevel: "schema"
