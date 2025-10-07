@@ -32,8 +32,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    nullable: false
     primaryKey: true
+    nullable: false
     autoincrement: false
   - name: "first_name"
     typeName: "varchar"
@@ -43,8 +43,8 @@ tables:
     scale: 0
     precision: 50
     columnProperties: []
-    nullable: false
     primaryKey: false
+    nullable: false
     autoincrement: false
   - name: "last_name"
     typeName: "varchar"
@@ -54,8 +54,8 @@ tables:
     scale: 0
     precision: 50
     columnProperties: []
-    nullable: false
     primaryKey: false
+    nullable: false
     autoincrement: false
   - name: "email"
     typeName: "varchar"
@@ -65,8 +65,8 @@ tables:
     scale: 0
     precision: 100
     columnProperties: []
-    nullable: false
     primaryKey: false
+    nullable: false
     autoincrement: false
   - name: "phone"
     typeName: "varchar"
@@ -76,8 +76,8 @@ tables:
     scale: 0
     precision: 20
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "created_at"
     typeName: "timestamp"
@@ -87,8 +87,8 @@ tables:
     scale: 6
     precision: 29
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
 - name: "nyctaxi"
   type: "TABLE"
@@ -103,8 +103,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "pickup_datetime"
     typeName: "timestamp"
@@ -114,8 +114,8 @@ tables:
     scale: 6
     precision: 29
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "dropoff_datetime"
     typeName: "timestamp"
@@ -125,8 +125,8 @@ tables:
     scale: 6
     precision: 29
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "passenger_count"
     typeName: "int4"
@@ -136,8 +136,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "trip_distance"
     typeName: "float8"
@@ -147,8 +147,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "pickup_longitude"
     typeName: "float8"
@@ -158,8 +158,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "pickup_latitude"
     typeName: "float8"
@@ -169,8 +169,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "rate_code_id"
     typeName: "int4"
@@ -180,8 +180,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "store_and_fwd_flag"
     typeName: "bpchar"
@@ -191,8 +191,8 @@ tables:
     scale: 0
     precision: 1
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "dropoff_longitude"
     typeName: "float8"
@@ -202,8 +202,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "dropoff_latitude"
     typeName: "float8"
@@ -213,8 +213,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "payment_type"
     typeName: "varchar"
@@ -224,8 +224,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "fare_amount"
     typeName: "float8"
@@ -235,8 +235,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "surcharge"
     typeName: "float8"
@@ -246,8 +246,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "mta_tax"
     typeName: "float8"
@@ -257,8 +257,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "tip_amount"
     typeName: "float8"
@@ -268,8 +268,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "tolls_amount"
     typeName: "float8"
@@ -279,8 +279,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "total_amount"
     typeName: "float8"
@@ -290,8 +290,8 @@ tables:
     scale: 17
     precision: 17
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
   - name: "cab_type"
     typeName: "int4"
@@ -301,8 +301,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    nullable: true
     primaryKey: false
+    nullable: true
     autoincrement: false
 - name: "payments"
   type: "TABLE"
@@ -326,8 +326,8 @@ tables:
     scale: 0
     precision: 10
     columnProperties: []
-    nullable: false
     primaryKey: true
+    nullable: false
     autoincrement: false
   - name: "customer_id"
     typeName: "int4"
@@ -346,8 +346,8 @@ tables:
       primaryTableSchema: "public"
       primaryTableName: "customers"
       primaryColumnName: "customer_id"
-    nullable: false
     primaryKey: false
+    nullable: false
     autoincrement: false
   - name: "amount"
     typeName: "numeric"
@@ -357,8 +357,8 @@ tables:
     scale: 2
     precision: 10
     columnProperties: []
-    nullable: false
     primaryKey: false
+    nullable: false
     autoincrement: false
   - name: "payment_date"
     typeName: "date"
@@ -368,8 +368,8 @@ tables:
     scale: 0
     precision: 13
     columnProperties: []
-    nullable: false
     primaryKey: false
+    nullable: false
     autoincrement: false
   - name: "payment_method"
     typeName: "varchar"
@@ -379,8 +379,8 @@ tables:
     scale: 0
     precision: 20
     columnProperties: []
-    nullable: false
     primaryKey: false
+    nullable: false
     autoincrement: false
 views: []
 databaseProductName: "PostgreSQL"
