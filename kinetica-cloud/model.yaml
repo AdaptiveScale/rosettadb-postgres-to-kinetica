@@ -1,11 +1,56 @@
+---
 safeMode: false
 tables:
-- name: nyctaxi
-  type: TABLE
-  schema: nuhibesimi_gmail
+- name: "customers"
+  type: "TABLE"
+  schema: "nuhibesimi_gmail"
   columns:
-  - name: vendor_id
-    typeName: string
+  - name: "customer_id"
+    typeName: "integer"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: true
+  - name: "first_name"
+    typeName: "string"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1000000000
+    scale: 0
+    precision: 1000000000
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "last_name"
+    typeName: "string"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1000000000
+    scale: 0
+    precision: 1000000000
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "email"
+    typeName: "string"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1000000000
+    scale: 0
+    precision: 1000000000
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "phone"
+    typeName: "string"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 1000000000
@@ -15,16 +60,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-    tests:
-      assertion:
-      - operator: '='
-        value: NYC
-        expected: 112789
-      - operator: '='
-        value: CMT
-        expected: 80813
-  - name: pickup_datetime
-    typeName: datetime
+  - name: "created_at"
+    typeName: "datetime"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 23
@@ -34,8 +71,23 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: dropoff_datetime
-    typeName: datetime
+- name: "nyctaxi"
+  type: "TABLE"
+  schema: "nuhibesimi_gmail"
+  columns:
+  - name: "vendor_id"
+    typeName: "string"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1000000000
+    scale: 0
+    precision: 1000000000
+    columnProperties: []
+    autoincrement: false
+    nullable: true
+    primaryKey: false
+  - name: "pickup_datetime"
+    typeName: "datetime"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 23
@@ -45,8 +97,19 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: passenger_count
-    typeName: integer
+  - name: "dropoff_datetime"
+    typeName: "datetime"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 23
+    scale: 6
+    precision: 23
+    columnProperties: []
+    autoincrement: false
+    nullable: true
+    primaryKey: false
+  - name: "passenger_count"
+    typeName: "integer"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 10
@@ -56,13 +119,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-    tests:
-      assertion:
-      - operator: '='
-        value: 4
-        expected: 0
-  - name: trip_distance
-    typeName: float
+  - name: "trip_distance"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -72,8 +130,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: pickup_longitude
-    typeName: float
+  - name: "pickup_longitude"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -83,8 +141,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: pickup_latitude
-    typeName: float
+  - name: "pickup_latitude"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -94,8 +152,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: rate_code_id
-    typeName: integer
+  - name: "rate_code_id"
+    typeName: "integer"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 10
@@ -105,8 +163,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: store_and_fwd_flag
-    typeName: string
+  - name: "store_and_fwd_flag"
+    typeName: "string"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 1000000000
@@ -116,8 +174,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: dropoff_longitude
-    typeName: float
+  - name: "dropoff_longitude"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -127,8 +185,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: dropoff_latitude
-    typeName: float
+  - name: "dropoff_latitude"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -138,8 +196,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: payment_type
-    typeName: string
+  - name: "payment_type"
+    typeName: "string"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 1000000000
@@ -149,8 +207,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: fare_amount
-    typeName: float
+  - name: "fare_amount"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -160,8 +218,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: surcharge
-    typeName: float
+  - name: "surcharge"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -171,8 +229,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: mta_tax
-    typeName: float
+  - name: "mta_tax"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -182,8 +240,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: tip_amount
-    typeName: float
+  - name: "tip_amount"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -193,8 +251,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: tolls_amount
-    typeName: float
+  - name: "tolls_amount"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -204,8 +262,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: total_amount
-    typeName: float
+  - name: "total_amount"
+    typeName: "float"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 17
@@ -215,8 +273,8 @@ tables:
     autoincrement: false
     nullable: true
     primaryKey: false
-  - name: cab_type
-    typeName: integer
+  - name: "cab_type"
+    typeName: "integer"
     ordinalPosition: 0
     primaryKeySequenceId: 0
     columnDisplaySize: 10
@@ -225,8 +283,76 @@ tables:
     columnProperties: []
     autoincrement: false
     nullable: true
+    primaryKey: false
+- name: "payments"
+  type: "TABLE"
+  schema: "nuhibesimi_gmail"
+  columns:
+  - name: "payment_id"
+    typeName: "integer"
+    ordinalPosition: 0
+    primaryKeySequenceId: 1
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: true
+  - name: "customer_id"
+    typeName: "integer"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    foreignKeys:
+    - name: "payments_customer_id_fkey"
+      schema: "nuhibesimi_gmail"
+      tableName: "payments"
+      columnName: "customer_id"
+      deleteRule: "3"
+      primaryTableSchema: "public"
+      primaryTableName: "customers"
+      primaryColumnName: "customer_id"
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "amount"
+    typeName: "double"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 17
+    scale: 2
+    precision: 17
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "payment_date"
+    typeName: "date"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 10
+    scale: 0
+    precision: 10
+    columnProperties: []
+    autoincrement: false
+    nullable: false
+    primaryKey: false
+  - name: "payment_method"
+    typeName: "string"
+    ordinalPosition: 0
+    primaryKeySequenceId: 0
+    columnDisplaySize: 1000000000
+    scale: 0
+    precision: 1000000000
+    columnProperties: []
+    autoincrement: false
+    nullable: false
     primaryKey: false
 views: []
-databaseProductName: PostgreSQL
-databaseType: kinetica
-operationLevel: schema
+databaseProductName: "PostgreSQL"
+databaseType: "kinetica"
+operationLevel: "schema"
